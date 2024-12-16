@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -261,7 +262,7 @@ export default function Home() {
                 alt="Car-1"
                 width={250}
                 height={72}
-                className="absolute top-[122px] left-[30px]"
+                className="absolute top-[122px] left-[20px]"
               />
               <Image
                 src="/p-Spesification-1.png"
@@ -307,8 +308,8 @@ export default function Home() {
               <Image
                 src="/p-car-2.png"
                 alt="Car-2"
-                width={204}
-                height={64}
+                width={215}
+                height={68}
                 className="absolute top-[122px] left-[385px]"
               />
               <Image
@@ -406,9 +407,9 @@ export default function Home() {
               <Image
                 src="/p-car-4.png"
                 alt="Car-4"
-                width={204}
-                height={64}
-                className="absolute top-[122px] left-[1038px]"
+                width={215}
+                height={68}
+                className="absolute top-[122px] left-[1050px]"
               />
               <Image
                 src="/p-Spesification-2.png"
@@ -844,7 +845,9 @@ export default function Home() {
 
           {/* Show More Car */}
           <div className="w-[734px] h-[44px] absolute top-[1442px] left-[580px] gap-[438px] flex justify-between cursor-pointer">
-            <Image src="/Show-More.png" alt="show more button" width={156} height={44}/>
+            <Link href="/category">
+              <Image src="/Show-More.png" alt="show more button" width={156} height={44}/>
+            </Link>
             <div className="w-[140px] h-[24px] font-['Plus_Jakarta_Sans'] text-sm font-medium leading-[48px] tracking-[-0.02em] text-right text-[#90A3BF]">
               120 Car
             </div>
