@@ -1,4 +1,4 @@
-// File: D:\SOWN_GIAIC\NEXT-WORK\HACKATHON-3\UI-UX-HACKATHON-NextJS-Design-Jam-2024-(MY-CLONE-PROJECT)\src\app\layout.tsx
+// File: D:\SOWN_GIAIC\NEXT-WORK\HACKATHON-3\UI-UX-HACKATHON-NextJS-Design-Jam-2024\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
