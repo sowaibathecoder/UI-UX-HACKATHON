@@ -17,14 +17,15 @@ export default function NavLinks() {
 
   return (
     <div className="relative">
-      <Image
-        src="/routing.png"
-        alt="pages_navigate"
-        width={44}
-        height={44}
-        onClick={() => setShowRoutes(!showRoutes)} // Toggle route list
-        className="cursor-pointer"
-      />
+      <div>
+        <button
+          onClick={() => setShowRoutes(!showRoutes)}
+          className="text-4xl text-[#596780]"
+        >
+          &#9776;
+        </button>
+      </div>
+
       {showRoutes && (
         <ul className="absolute right-0 mt-2 bg-white shadow-md border border-gray-200 rounded-md w-40 max-h-60 overflow-auto z-10">
           {routes.map((route) => (

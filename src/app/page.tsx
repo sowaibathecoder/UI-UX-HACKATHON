@@ -11,11 +11,11 @@ export default function Home() {
         <div className="w-[640px] h-[360px] absolute top-[32px] left-[64px] rounded-[10px] bg-[#54A6FF]">
           <div className="w-[284px] h-[224px] absolute top-[24px] left-[24px] gap-[20px]">
             <div className="w-[284px] h-[160px] gap-[16px]">
-              <div className="w-[272px] h-[96px] font-['Plus_Jakarta_Sans'] text-2xl font-semibold leading-[48px] tracking-tight text-left text-white">
+              <div className="w-[272px] h-[96px] font-['Plus_Jakarta_Sans'] text-[32px] font-semibold leading-[48px] tracking-tight text-left text-white">
                 The Best Platform
                 <br /> for Car Rental
               </div>
-              <div className="w-[284px] h-[48px] font-['Plus_Jakarta_Sans'] text-base font-medium leading-6 tracking-[-0.02em] text-left text-white">
+              <div className="w-[284px] h-[48px] font-['Plus_Jakarta_Sans'] text-base font-medium leading-6 tracking-[-0.02em] text-left text-white mt-4">
                 Ease of doing a car rental safely and reliably. Of course at a
                 low price.
               </div>
@@ -37,10 +37,10 @@ export default function Home() {
         <div className="w-[640px] h-[360px] absolute top-[32px] left-[736px] rounded-[10px] bg-[#3563E9]">
           <div className="w-[284px] h-[224px] absolute top-[24px] left-[24px] gap-[20px]">
             <div className="w-[284px] h-[160px] gap-[16px]">
-              <div className="w-[272px] h-[96px] font-['Plus_Jakarta_Sans'] text-2xl font-semibold leading-[48px] tracking-tight text-left text-white">
+              <div className="w-[272px] h-[96px] font-['Plus_Jakarta_Sans'] text-[32px] font-semibold leading-[48px] tracking-tight text-left text-white">
                 Easy way to rent a car at a low price
               </div>
-              <div className="w-[284px] h-[48px] font-['Plus_Jakarta_Sans'] text-base font-medium leading-6 tracking-[-0.02em] text-left text-white">
+              <div className="w-[284px] h-[48px] font-['Plus_Jakarta_Sans'] text-base font-medium leading-6 tracking-[-0.02em] text-left text-white mt-4">
                 Providing cheap car rental services
                 <br /> and safe and comfortable facilities.
               </div>
