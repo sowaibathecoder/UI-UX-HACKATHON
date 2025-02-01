@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "import-data": "node scripts/importTemplate7Data.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@sanity/client": "^6.27.2",

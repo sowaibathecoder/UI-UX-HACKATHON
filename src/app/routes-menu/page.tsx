@@ -13,6 +13,8 @@ export default function NavLinks() {
     { name: "Detail", path: "/detail" },
     { name: "Payment", path: "/payment" },
     { name: "Dashboard-Admin", path: "/dashboard-admin" },
+    { name: "Login", path: "/login-sign_up" }, // New Route Added
+
   ];
 
   return (

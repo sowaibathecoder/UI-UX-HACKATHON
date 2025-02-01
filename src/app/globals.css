@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-jakarta; /* ✅ Ab poore project pe "Plus Jakarta Sans" apply ho jayega */
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -21,3 +25,4 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+

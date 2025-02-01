@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import SearchBar from "./components/search-bar";
+import { LikedProvider } from "./components/likedContext";
 // import Footer from "./components/footer";
 
 const geistSans = localFont({
@@ -30,9 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LikedProvider>
         <SearchBar />
         {children}
         {/* <Footer /> */}
+        </LikedProvider>
       </body>
     </html>
   );
