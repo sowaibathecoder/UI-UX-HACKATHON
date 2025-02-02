@@ -20,7 +20,7 @@ const LikedIcon = ({ car }: { car: any }) => {
   return (
     <div className="absolute top-4 right-4">
       <Image
-        src={liked ? "/red-heart.png" : "/heart-1.png"}
+        src={liked ? "/red-heart.png" : "/white-heart.png"}
         alt="liked-icon"
         width={24}
         height={24}

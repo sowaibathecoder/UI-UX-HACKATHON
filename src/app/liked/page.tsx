@@ -24,7 +24,7 @@ export default function LikedPage() {
                 height={100}
                 className="rounded my-2"
               />
-              <p className="text-sm font-bold">Price: {car.pricePerDay}/day</p>
+              <p className="text-sm font-bold">Price: {car.pricePerDay}day</p>
             </div>
           ))}
         </div>

@@ -6,6 +6,7 @@
 
 body {
   @apply font-jakarta; /* ✅ Ab poore project pe "Plus Jakarta Sans" apply ho jayega */
+  background-color: #F6F7F9;
 }
 
 /* :root {

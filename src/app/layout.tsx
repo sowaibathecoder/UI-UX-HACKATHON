@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import SearchBar from "./components/search-bar";
 import { LikedProvider } from "./components/likedContext";
-// import Footer from "./components/footer";
+import Footer from "./components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +34,7 @@ export default function RootLayout({
         <LikedProvider>
         <SearchBar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         </LikedProvider>
       </body>
     </html>

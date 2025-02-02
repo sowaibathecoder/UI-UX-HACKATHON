@@ -6,7 +6,7 @@ import ShowMore from "./components/showMore";
 export default function Home() {
   return (
     <div>
-      <div className="w-full h-[2120px] relative border border-red-600 bg-[#F6F7F9]">
+      <div className="w-full relative">
         <AdOne />
         <AdTwo />
         <BookingForm />
@@ -31,3 +31,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+

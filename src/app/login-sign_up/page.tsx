@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoginPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#F6F7F9]">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
         {/* Brand Logo */}
         <div className="text-center mb-6">

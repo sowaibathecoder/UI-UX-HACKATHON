@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CarCards from "./carCards";
 
+
 export default function ShowMore() {
   const [visibleCar, setVisibleCar] = useState(12); // Initially 12 cars
   const [showMore, setShowMore] = useState(false);
@@ -11,7 +12,7 @@ export default function ShowMore() {
     if (showMore) {
       setVisibleCar(12); // Show only initial 12 cars
     } else {
-      setVisibleCar(24); // Show more cars (adjust as needed)
+      setVisibleCar(16); // Show more cars (adjust as needed)
     }
     setShowMore(!showMore);
   };
