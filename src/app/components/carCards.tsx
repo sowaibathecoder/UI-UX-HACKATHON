@@ -63,7 +63,7 @@ export default function CarCards({ visibleCar }: CarCardsProps) {
             <div className="flex justify-between items-center mt-4">
               <h3 className="text-lg font-bold text-[#1A202C] absolute top-[340px]">
                 {item.pricePerDay}
-                <span className="text-[#90A3BF] text-[15px] font-semibold"> / day</span>
+                <span className="text-[#90A3BF] text-[15px] font-semibold">day</span>
               </h3>
               <button className="bg-[#3563E9] text-white hover:bg-blue-700 active:bg-[#5c84fb] absolute top-[330px] right-[20px] text-sm md:text-base rounded-[4px] h-[36px] w-[100px] md:h-[44px] md:w-[116px]">
                 Rent Now

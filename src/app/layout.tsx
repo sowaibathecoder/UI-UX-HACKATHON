@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import SearchBar from "./components/search-bar";
+import SearchBar from "./components/searchBar";
 import { LikedProvider } from "./components/likedContext";
 import Footer from "./components/footer";
 

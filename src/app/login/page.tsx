@@ -2,20 +2,10 @@ import React from 'react';
 
 const LoginPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
-        {/* Website Name */}
-        <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-blue-600">Rent-A-Ride</h1>
-        </div>
-
         {/* Brand Logo */}
         <div className="text-center mb-6">
-          <img
-            src="/logo.png"
-            alt="Car Rental Logo"
-            className="mx-auto w-24"
-          />
           <h2 className="text-2xl font-bold text-gray-800 mt-4">
             Welcome Back!
           </h2>

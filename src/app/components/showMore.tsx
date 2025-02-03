@@ -22,7 +22,7 @@ export default function ShowMore() {
       <CarCards visibleCar={visibleCar} />
       <button
         onClick={handleToggle}
-        className="bg-[#3563E9] text-white hover:bg-blue-700 active:bg-[#5c84fb] text-base rounded-[4px] w-[156px] h-[44px] flex justify-center items-center mt-6 mx-auto cursor-pointer"
+        className="bg-[#3563E9] text-white hover:bg-blue-700 active:bg-[#5c84fb] text-base rounded-[4px] w-[156px] h-[44px] flex justify-center items-center mt-10 mb-20 mx-auto cursor-pointer"
       >
         {showMore ? "Hide Cars" : "Show More Cars"}
       </button>
