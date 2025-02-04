@@ -14,11 +14,11 @@ export default function CarCards({ visibleCar }: CarCardsProps) {
   useEffect(() => {
     const getCars = async () => {
       try {
-        const data = await fetchCars(); // Data fetch karna
+        const data = await fetchCars(); // Fetching data
         setCarData(data);
         setError(null);
       } catch (err: any) {
-        setError(err.message); // Error message set karna
+        setError(err.message); // Set error message
       }
     };
 

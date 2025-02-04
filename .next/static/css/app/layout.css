@@ -537,9 +537,6 @@ video {
 .left-1\/2{
   left: 50%;
 }
-.left-\[137px\]{
-  left: 137px;
-}
 .left-\[140px\]{
   left: 140px;
 }
@@ -548,9 +545,6 @@ video {
 }
 .left-\[172px\]{
   left: 172px;
-}
-.left-\[190px\]{
-  left: 190px;
 }
 .left-\[20px\]{
   left: 20px;
@@ -626,9 +620,6 @@ video {
 }
 .left-\[60px\]{
   left: 60px;
-}
-.left-\[64px\]{
-  left: 64px;
 }
 .left-\[688px\]{
   left: 688px;
@@ -746,9 +737,6 @@ video {
 }
 .top-\[232px\]{
   top: 232px;
-}
-.top-\[234px\]{
-  top: 234px;
 }
 .top-\[235px\]{
   top: 235px;
@@ -1285,9 +1273,6 @@ video {
 .w-\[586px\]{
   width: 586px;
 }
-.w-\[640px\]{
-  width: 640px;
-}
 .w-\[654px\]{
   width: 654px;
 }
@@ -1402,9 +1387,6 @@ video {
 }
 .gap-\[16px\]{
   gap: 16px;
-}
-.gap-\[20px\]{
-  gap: 20px;
 }
 .gap-\[212px\]{
   gap: 212px;
@@ -1754,9 +1736,6 @@ video {
 }
 .tracking-\[40\.32\]{
   letter-spacing: 40.32;
-}
-.tracking-tight{
-  letter-spacing: -0.025em;
 }
 .text-\[\#13131399\]{
   color: #13131399;

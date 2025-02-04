@@ -45,16 +45,6 @@ export const carsSchema = {
       description: 'Original price before discount (if applicable)',
     },
     {
-      name: 'tags',
-      type: 'array',
-      title: 'Tags',
-      of: [{ type: 'string' }],
-      options: {
-        layout: 'tags',
-      },
-      description: 'Tags for categorization (e.g., popular, recommended)',
-    },
-    {
       name: 'image',
       type: 'image',
       title: 'Car Image',
