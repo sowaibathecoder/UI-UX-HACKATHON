@@ -8,6 +8,10 @@ body {
   @apply font-jakarta; /* ✅ Ab poore project pe "Plus Jakarta Sans" apply ho jayega */
   background-color: #F6F7F9;
 }
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(170, 164, 164) !important; /* Arrow ka color gray */
+}
+
 
 /* :root {
   --background: #ffffff;

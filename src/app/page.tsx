@@ -8,9 +8,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Main Content */}
       <div className="flex-grow">
-        <div className="flex justify-center gap-7 p-7">
+        <div className="justify-center gap-7 p-7 hidden md:flex"> {/*For laptop and desktop*/}
           <AdOne />
           <AdTwo />
+        </div>
+        <div className="flex justify-center gap-7 p-7 md:hidden"> {/*For mobile and tablet*/}
+          <AdOne />
         </div>
 
         {/* Other Components */}
