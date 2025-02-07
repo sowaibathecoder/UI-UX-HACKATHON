@@ -1,292 +1,72 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import SideDiv from "../components/sideDiv";
+import PersonReview from "../components/personReview";
 
 export default function Details() {
   return (
-    <>
-      <div className="w-full h-[2016px] absolute top-[124] bg-[#F6F7F9]">
-        {/* Side Div */}
-        <div className="w-[360px] h-[2016px] bg-[#FFFFFF] p-[32px]">
-          <div className="w-[176px] h-[352px] absolute top-[32px] gap-[28px]">
-            <div className="w-[104px] h-[20px] font-['Plus_Jakarta_Sans'] text-[12px] font-semibold leading-[15.12px] tracking-[-0.02em] text-left text-[#90A3BF]">
-              TYPE
-            </div>
+    <div className="w-full min-h-screen px-4 md:pr-4 pt-5 md:pt-6 flex flex-col md:flex-row gap-6 mb-8">
+      {/* Sidebar - Hidden on Mobile */}
+      <aside className="hidden md:block md:w-[280px] lg:w-[320px] xl:w-[360px]">
+        <SideDiv />
+      </aside>
 
-            <ul className="w-[176px] h-[304px] gap-[32px] flex flex-col py-[22px]">
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/blue-tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  Sport (10)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/blue-tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  SUV (12)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  MPV (16)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  Sedan (20)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  Coupe (14)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  Hatchback (14)
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* Capacity */}
-          <div className="w-[176px] h-[240px] absolute top-[440px] left-[32px] gap-[28px]">
-            <div className="w-[104px] h-[20px] font-['Plus_Jakarta_Sans'] text-[12px] font-semibold leading-[15.12px] tracking-[-0.02em] text-left text-[#90A3BF]">
-              CAPACITY
-            </div>
-
-            <ul className="w-[176px] h-[304px] gap-[32px] flex flex-col py-[22px]">
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/blue-tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  2 Person (10)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  4 Person (14)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  6 Person (12)
-                </div>
-              </li>
-
-              <li className="flex gap-[10px]">
-                <Image
-                  src="/blue-tick-square.png"
-                  alt="check-mark"
-                  width={24}
-                  height={24}
-                />
-                <div className="w-[144px] h-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-[#596780]">
-                  8 or More (16)
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* Price */}
-          <div className="w-[296px] h-[104px] absolute top-[736px] left-[32px] gap-[28px]">
-            <div className="w-[104px] h-[20px] text-[#90A3BF] font-['Plus_Jakarta_Sans'] text-[12px] font-semibold leading-[15.12px] tracking-[-0.02em] text-left">
-              PRICE
-            </div>
-            <Image
-              src="/price-range.png"
-              alt="price-bar"
-              width={296}
-              height={20}
-              className="mt-[23px]"
-            />
-            <div className="w-[296px] h-[24px] text-[#596780] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[30px] tracking-[-0.02em] text-justify mt-[7px]">
-              Max. $100.00
-            </div>
-          </div>
-        </div>
- 
-        {/* Blue Car Div */}
-        <div className="w-[492px] h-[360px] absolute top-[32px] left-[392px] rounded-[10px] bg-[#3563E9]">
-          <div className="w-[372px] h-[160px] absolute top-[24px] left-[24px] gap-[16px]">
-            <div className="w-[372px] h-[96px] font-['Plus_Jakarta_Sans'] text-[32px] text-white font-semibold leading-[48px] tracking-[-0.03em] text-left">
-              Sports car with the best design and acceleration
-            </div>
-            <div className="w-[284px] h-[48px] font-['Plus_Jakarta_Sans'] text-[16px] font-medium leading-[24px] tracking-[-0.02em] text-left text-white mt-3">
-              Safety and comfort while driving a futuristic and elegant sports car
-            </div>
-          </div>
-          <Image src="/nissan.png" alt="Nissan GT - R" width={380} height={120} className="absolute top-[216px] left-[60px]"/>
+      {/* Main Content */}
+      <main className="flex-1 flex flex-col gap-6">
+        {/* Car Details Section */}
+        <div className="w-full bg-[#3563E9] text-white p-6 rounded-lg">
+          <h1 className="text-xl md:text-3xl font-semibold">Sports car with the best design and acceleration</h1>
+          <p className="text-sm md:text-base mt-2">Safety and comfort while driving a futuristic and elegant sports car</p>
+          <Image src="/nissan.png" alt="Nissan GT-R" width={600} height={200} className="w-full max-w-lg mx-auto mt-4" />
         </div>
 
-        {/* View Cars */}
-        <Image src="/View-1.png" alt="view-car" width={148} height={124} className="absolute top-[416px] left-[392px]"/>
-        <Image src="/View-2.png" alt="view-car" width={148} height={124} className="absolute top-[416px] left-[564px]"/>
-        <Image src="/View-3.png" alt="view-car" width={148} height={124} className="absolute top-[416px] left-[736px]"/>
+        {/* Image Views */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {["/View-1.png", "/View-2.png", "/View-3.png"].map((src, i) => (
+            <Image key={i} src={src} alt={`view-car-${i}`} width={200} height={150} className="w-full object-cover rounded-lg" />
+          ))}
+        </div>
 
-        {/* Detail div of Nissan GT - R*/}
-        <div className="w-[492px] h-[508px] absolute top-[32px] left-[916px] rounded-[10px] bg-[#FFFFFF]">
-          <div className="w-[220px] h-[72px] absolute top-[24px] left-[24px] gap-[8px]">
-            <div className="w-[220px] h-[40px] font-['Plus_Jakarta_Sans'] text-[32px] font-bold leading-[48px] tracking-[-0.03em] text-left text-[#1A202C]">
-              Nissan GT - R
+        {/* Review Section for laptop*/}
+        <div className="hidden md:flex">
+        <PersonReview />
+        </div>
+      </main>
+
+      {/* Car Detail Card */}
+      <aside className="md:w-[320px] xl:w-[360px] bg-white rounded-lg p-6 shadow-md">
+        <div className="flex justify-between items-start">
+          <div>
+            <h2 className="text-xl md:text-2xl font-bold text-[#1A202C]">Nissan GT - R</h2>
+            <div className="flex items-center gap-2 mt-1">
+              <Image src="/Review-Star.png" alt="stars" width={108} height={20} />
+              <p className="text-sm text-[#596780]">440+ Reviewer</p>
             </div>
-            <div className="w-[220px] h-[20px] gap-[8px] flex mt-2">
-              <Image src="/Review-Star.png" alt="stars" width={108} height={20} className="gap-[2px]"/>
-              <div className="w-[104px] h-[20px] font-['Plus_Jakarta_Sans'] text-[13.9px] font-medium leading-[17.64px] tracking-[0.02em] text-left text-[#596780] pt-1">
-                440+ Reviewer
-              </div>
-            </div>
           </div>
-          <div className="w-[444px] h-[120px] absolute top-[128px] left-[24px] font-['Plus_Jakarta_Sans'] text-[20px] font-normal leading-[40px] tracking-[-0.02em] text-left text-[#596780]">
-            NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
-          </div>
-          <Image src="/Spesification-7.png" alt="specification" width={444} height={72} className="absolute top-[280px] left-[24px] gap-[44px]"/>
-          <div className="w-[200px] h-[56px] absolute top-[420px] left-[24px] gap-[4px] flex">
-            <p className="w-[200px] h-[38px] font-['Plus_Jakarta_Sans'] text-[32px] font-bold leading-[35.28px] tracking-[40.32] text-left">
-              $80.00/
-            </p>
-            <p className="text-[#90A3BF] text-[18px] font-semibold pr-5 pt-[8px]">
-              days
-            </p>
-          </div>
-          <span className="w-[200px] h-[20px] font-['Plus_Jakarta_Sans'] absolute top-[460px] left-[24px] text-[16px] font-bold leading-[20.16px] text-left line-through text-[#90A3BF]">
-            $100.00
-          </span>
-          <Link href="/payment">
-            <Image src="/Button-Rental.png" alt="Rent-Button" width={180} height={56} className="absolute top-[420px] left-[305px] px-[20px] gap-[8px] cursor-pointer"/>
+          <Image src="/red-heart.png" alt="heart" width={24} height={24} className="cursor-pointer" />
+        </div>
+
+        <p className="text-sm md:text-base text-[#596780] leading-relaxed mt-4">
+          NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+        </p>
+
+        <Image src="/Spesification.png" alt="specification" width={444} height={72} className="w-full h-auto mt-4"/>
+
+        <div className="flex items-center mt-4">
+          <p className="text-xl font-bold">$80.00/<span className="text-sm text-[#90A3BF]">day</span></p>
+          <Link href="/payment" className="ml-auto">
+          <button className="bg-[#3563E9] text-white hover:bg-blue-700 active:bg-[#5c84fb] w-[80px] lg:w-[120px] h-[30px] lg:h-[44px] rounded text-[12px] md:text-base font-semibold mt-4 md:mt-[18px]">
+          Rent Now
+        </button>
           </Link>
-          <Image src="/red-heart.png" alt="heart" width={24} height={24} className="absolute top-[24px] left-[444px]"/>
+        </div>
+      </aside>
+      {/* Review Section for laptop*/}
+      <div className="flex md:hidden">
+        <PersonReview />
         </div>
 
-        {/* Person Reviews */}
-        <div className="w-[1016px] h-[452px] absolute top-[572px] left-[392px] rounded-[10px]">
-
-          {/* Total Reviews */}
-          <div className="absolute top-[24px] left-[24px] w-[136px] h-[28px] gap-[12px] flex cursor-pointer">
-            <p className="w-[80px] h-[28px] font-['Plus_Jakarta_Sans'] text-[20px] font-semibold leading-[25.2px] tracking-[-0.02em] text-left text-[#1A202Cpx]">
-              Reviews
-            </p>
-            <Image src="/Total-Review.png" alt="total-review" height={28} width={44} />
-          </div>
-
-          {/* First Review Div */}
-          <div className="w-[968px] h-[124px] absolute top-[84px] left-[24px]">
-            <Image src="/Profile-1.png" alt="profile-pick" width={56} height={56} />
-            <div className="w-[128px] h-[56px] absolute left-[70px] bottom-[67px] gap-[8px]">
-              <p className="w-[128px] h-[28px] font-['Plus_Jakarta_Sans'] text-[20px] font-bold leading-[30px] tracking-[-0.03em] text-left text-[#1A202C]">
-                Alex Stanton
-              </p>
-              <p className="w-[128px] h-[20px] font-['Plus_Jakarta_Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em] text-left text-[#90A3BF] pt-[7px]">
-                CEO at Bukalapak
-              </p>
-              <div className="w-[128px] h-[56px] absolute bottom-[-2px] left-[767px] gap-[8px]">
-                <div className="w-[128px] h-[28px] font-['Plus_Jakarta_Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em] text-right text-[#90A3BF] pt-[2px]">
-                  21 July 2022
-                </div>
-                <Image src="/Review-Star.png" alt="stars" width={108} height={20} className="gap-[2px] ml-5 mt-1"/>
-              </div>
-            </div>
-            <p className="w-[896px] h-[56px] absolute top-[66px] left-[70px] font-['Plus_Jakarta_Sans'] text-[14px] font-normal leading-[28px] tracking-[-0.02em] text-left text-[#596780]">
-              We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and
-              comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
-            </p>
-          </div>
-
-          {/* Second Review Div */}
-          <div className="w-[968px] h-[124px] absolute top-[232px] left-[24px]">
-            <Image src="/Profile-2.png" alt="profile-pick" width={56} height={56} />
-            <div className="w-[128px] h-[56px] absolute left-[70px] bottom-[67px] gap-[8px]">
-              <p className="w-[128px] h-[28px] font-['Plus_Jakarta_Sans'] text-[20px] font-bold leading-[30px] tracking-[-0.03em] text-left text-[#1A202C]">
-                Skylar Dias
-              </p>
-              <p className="w-[128px] h-[20px] font-['Plus_Jakarta_Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em] text-left text-[#90A3BF] pt-[7px]">
-                CEO at Amazon
-              </p>
-              <div className="w-[128px] h-[56px] absolute bottom-[-2px] left-[767px] gap-[8px]">
-                <div className="w-[128px] h-[28px] font-['Plus_Jakarta_Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em] text-right text-[#90A3BF] pt-[2px]">
-                  20 July 2022
-                </div>
-                <Image src="/Review-Star.png" alt="stars" width={108} height={20} className="gap-[2px] ml-5 mt-1"/>
-              </div>
-            </div>
-            <p className="w-[896px] h-[56px] absolute top-[66px] left-[70px] font-['Plus_Jakarta_Sans'] text-[14px] font-normal leading-[28px] tracking-[-0.02em] text-left text-[#596780]">
-              We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars
-              with good and comfortable facilities. In addition, the service provided by the officers is also very friendly
-              and very polite.
-            </p>
-          </div>
-
-         {/* Show All Div */}
-         <div className="w-[132px] h-[44px] absolute top-[384px] left-[454px] px-[20px] gap-[8px] flex justify-between items-center cursor-pointer">
-          <div className="w-[68px] h-[24px] font-['Plus_Jakarta_Sans'] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-center text-[#90A3BF]">
-            Show All
-          </div>
-          <Image src="/arrow-down-1.png" alt="down-arrow" width={16} height={16}/>
-         </div>
-
-        </div>
-
-
-      </div>
-    </>
+    </div>
   );
 }
-
-
-

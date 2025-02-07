@@ -5,14 +5,14 @@ import CarCards from "./carCards";
 
 
 export default function ShowMore() {
-  const [visibleCar, setVisibleCar] = useState(12); // Initially 12 cars
+  const [visibleCar, setVisibleCar] = useState(12); 
   const [showMore, setShowMore] = useState(false);
 
   const handleToggle = () => {
     if (showMore) {
-      setVisibleCar(12); // Show only initial 12 cars
+      setVisibleCar(12); 
     } else {
-      setVisibleCar(16); // Show more cars (adjust as needed)
+      setVisibleCar(16); 
     }
     setShowMore(!showMore);
   };

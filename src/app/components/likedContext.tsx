@@ -1,20 +1,47 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+
+interface CarType {
+  _id: string;
+  type: string;
+  name: string;
+  imageUrl: string;
+  pricePerDay: number;
+}
 
 interface LikedContextType {
-  likedCars: any[];
-  addLikedCar: (car: any) => void;
+  likedCars: CarType[];
+  addLikedCar: (car: CarType) => void;
   removeLikedCar: (id: string) => void;
+  isLiked: boolean;
 }
 
 const LikedContext = createContext<LikedContextType | undefined>(undefined);
 
 export function LikedProvider({ children }: { children: ReactNode }) {
-  const [likedCars, setLikedCars] = useState<any[]>([]);
+  const [likedCars, setLikedCars] = useState<CarType[]>([]);
 
-  const addLikedCar = (car: any) => {
-    setLikedCars((prev) => [...prev, car]);
+  useEffect(() => {
+    const storedCars = localStorage.getItem("likedCars");
+    if (storedCars) {
+      setLikedCars(JSON.parse(storedCars));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("likedCars", JSON.stringify(likedCars));
+  }, [likedCars]);
+
+  const isLiked = likedCars.length > 0;
+
+  const addLikedCar = (car: CarType) => {
+    setLikedCars((prev) => {
+      if (prev.some((likedCar) => likedCar._id === car._id)) {
+        return prev;
+      }
+      return [...prev, car];
+    });
   };
 
   const removeLikedCar = (id: string) => {
@@ -22,7 +49,7 @@ export function LikedProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <LikedContext.Provider value={{ likedCars, addLikedCar, removeLikedCar }}>
+    <LikedContext.Provider value={{ likedCars, addLikedCar, removeLikedCar, isLiked }}>
       {children}
     </LikedContext.Provider>
   );

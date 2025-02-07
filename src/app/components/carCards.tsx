@@ -1,12 +1,11 @@
-// src/app/components/carCards.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import LikedIcon from "./likedIcon";
 import { fetchCars } from "../../../sanity/lib/fetchCars";
-import CarSlider from "./carSlider"; // Import CarSlider
-
+import CarSlider from "./carSlider"; 
 interface CarCardsProps {
   visibleCar: number;
 }
@@ -31,16 +30,14 @@ export default function CarCards({ visibleCar }: CarCardsProps) {
 
   return (
     <div>
-      {/* Mobile and Tablet View: Use CarSlider */}
       <CarSlider carData={carData} visibleCar={visibleCar} />
 
-      {/* Desktop View: Use Grid Layout */}
       <div className="hidden md:flex flex-wrap gap-6 justify-center">
         {error ? (
           <p className="text-red-500 font-bold">{error}</p>
         ) : (
           carData.slice(0, visibleCar).map((item: any) => (
-            <div key={item._id} className="bg-white shadow-md rounded-lg p-4 w-[304px] h-[388px] relative">
+            <div key={item._id} className="bg-white shadow-md rounded-lg p-4 w-[304px] h-[388px] relative transition-transform transform hover:scale-105">
               <LikedIcon car={item} />
 
               <h1 className="text-xl font-bold text-[#1A202C]">{item.name}</h1>
@@ -74,9 +71,11 @@ export default function CarCards({ visibleCar }: CarCardsProps) {
                   {item.pricePerDay}
                   <span className="text-[#90A3BF] text-[15px] font-semibold">day</span>
                 </h3>
+                <Link href="/detail">
                 <button className="bg-[#3563E9] text-white hover:bg-blue-700 active:bg-[#5c84fb] absolute top-[330px] right-[20px] text-sm rounded-[4px] h-[36px] w-[100px]">
                   Rent Now
                 </button>
+                </Link>
               </div>
             </div>
           ))
