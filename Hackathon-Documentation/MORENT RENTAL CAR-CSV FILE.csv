@@ -1,0 +1,9 @@
+Test Case ID,Feature,Test Scenario,Test Steps,Expected Result,Actual Result,Status (Pass/Fail)
+TC001,Navigation,Verify homepage loads correctly,Open the app and check homepage,Homepage should load without errors,Passed,Passed
+TC002,Show More Car,Show and Hide Cars perfectly,Click the Show More button and check the show and hide cars,Cars show and hide perfectly,Passed,Passed
+TC003,Responsive Design,Test mobile responsiveness,Open app on mobile and check UI,UI should be properly displayed,Passed,Passed
+TC004,Submit Form,Open the payment page,Fill in all required fields with valid data,"Click on the ""Confirm Payment"" button",Passed,Passed
+TC005,Liked Feature,Ensure liked cars persist after refresh,Like a car and refresh page,Car should remain liked,Passed,Passed
+TC006,Review Section,Ensure reviews are stored properly,Submit a review and refresh,Review should persist,Passed,Passed
+TC007,Data Fetching (Sanity),Disconnect the internet,Open the application page where data is fetched from Sanity,Error message should appear ,Passed,Passed
+TC008,Error Handling,Ensure errors are handled gracefully,Enter invalid input in form,App should show proper error message,Passed,Passed
