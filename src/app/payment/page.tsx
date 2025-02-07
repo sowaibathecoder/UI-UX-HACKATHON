@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
@@ -52,11 +51,16 @@ export default function Payment() {
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
 
-    if (type === "checkbox" || type === "radio") {
+    if (type === "checkbox") {
       const { checked } = e.target as HTMLInputElement;
       setFormData((prev) => ({
         ...prev,
         [name]: checked,
+      }));
+    } else if (type === "radio") {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value, // Directly set the value for radio buttons
       }));
     } else {
       setFormData((prev) => ({
@@ -73,7 +77,7 @@ export default function Payment() {
   };
 
   return (
-    <div className="w-full min-h-screen pt-8 bg-[#F6F7F9] px-4 md:px-8 lg:px-16 xl:px-32">
+    <form onSubmit={handleSubmit} className="w-full min-h-screen pt-8 bg-[#F6F7F9] px-4 md:px-8 lg:px-16 xl:px-32">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Section: Form */}
         <div className="lg:col-span-2">
@@ -306,7 +310,7 @@ export default function Payment() {
                     value="credit-card"
                     checked={formData.paymentMethod === "credit-card"}
                     onChange={handleChange}
-                    className="mr-2 w-6 h-6"
+                    className="mr-2 w-6 h-6 cursor-pointer"
                   />
                   <span className="text-[16px] font-semibold text-[#1A202C]">
                     Credit Card
@@ -372,12 +376,12 @@ export default function Payment() {
                   value="paypal"
                   checked={formData.paymentMethod === "paypal"}
                   onChange={handleChange}
-                  className="w-6 h-6"
+                  className="w-6 h-6 cursor-pointer"
                 />
                 <span className="text-[16px] font-semibold text-[#1A202C]">
                   PayPal
                 </span>
-                <Image src="/paypal.png" alt="PayPal" width={100} height={24} />
+                <Image src="/PayPal.png" alt="PayPal" width={100} height={24} />
               </div>
 
               {/* Bitcoin Option */}
@@ -388,13 +392,13 @@ export default function Payment() {
                   value="bitcoin"
                   checked={formData.paymentMethod === "bitcoin"}
                   onChange={handleChange}
-                  className="w-6 h-6"
+                  className="w-6 h-6 cursor-pointer"
                 />
                 <span className="text-[16px] font-semibold text-[#1A202C]">
                   Bitcoin
                 </span>
                 <Image
-                  src="/bitcoin.png"
+                  src="/Bitcoin.png"
                   alt="Bitcoin"
                   width={94}
                   height={20}
@@ -425,7 +429,7 @@ export default function Payment() {
                   name="agreeMarketing"
                   checked={formData.agreeMarketing}
                   onChange={handleChange}
-                  className="mr-2 w-5 h-5"
+                  className="mr-2 w-5 h-5 cursor-pointer"
                 />
                 <label className="text-[16px] font-semibold text-[#1A202C]">
                   I agree with sending Marketing and newsletter emails. No spam,
@@ -523,6 +527,6 @@ export default function Payment() {
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
